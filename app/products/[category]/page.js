@@ -7,9 +7,9 @@ export default async function Category({ params }) {
     let { category } = await params;
     let products = await getProducts(category);
     return (
-        <div className="h-screen flex flex-col justify-center items-center m-5">
+        <div className="h-full flex flex-col justify-center items-center m-5">
 
-            <div className="flex flex-col justify-center items-center gap-5">
+            <div className="flex flex-col justify-center items-center gap-5 h-fill">
                 <h1 className="text-4xl font-bold">Find the best { }`s items</h1>
             </div>
             <ProductFilterList products={products}></ProductFilterList>

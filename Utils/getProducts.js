@@ -5,7 +5,7 @@ export default async function getProducts(category) {
 
     if (category) {
         console.log("Hay category")
-        let filteredData = data.filter((item) => item.category == category)
+        let filteredData = data.filter((item) => item.category.includes(category))
         return filteredData
     } else {
         console.log("NOOOO hayy category")

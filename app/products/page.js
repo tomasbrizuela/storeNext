@@ -5,12 +5,12 @@ import getProducts from "../../Utils/getProducts";
 export default async function () {
     let productsList = await getProducts();
     return (
-        <div className="flex flex-col justify-center items-center ">
+        <div className="flex flex-col justify-center items-center">
             <div className="flex flex-row justify-center items-center p-10  gap-5">
-                <Link href={"/products/women's clothing"}>
+                <Link href={"/products/wom"}>
                     <Button>Women's clothing</Button>
                 </Link>
-                <Link href={"/products/men's clothing"}>
+                <Link href={"/products/men"}>
                     <Button>Men's clothing</Button>
                 </Link>
                 <Link href={"/products/electronics"}>
@@ -20,7 +20,7 @@ export default async function () {
                     <Button>Joyas</Button>
                 </Link>
             </div>
-            <div>
+            <div className="flex flex-row justify-center items-center h-fit">
                 <h1 className="text-4xl font-bold">Product List</h1>
             </div>
             <div className="flex flex-row flex-wrap  justify-center items-center gap-5 w-11/12 m-3">
